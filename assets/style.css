@@ -1,0 +1,72 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; width: 100%; overflow: hidden; background: #fff; }
+body { font: 14px/1.3 system-ui, sans-serif; display: flex; flex-direction: column; }
+
+/* top 10% : form */
+.topbar {
+  height: 10vh; flex: 0 0 10vh;
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 14px; border-bottom: 1px solid #eee;
+}
+.topbar input[type=file] { max-width: 220px; }
+.topbar input[type=number] { width: 90px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; }
+.topbar button {
+  width: 40px; height: 34px; font-size: 20px; line-height: 1;
+  border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer;
+}
+.topbar button:active { background: #f2f2f2; }
+
+/* center 80% */
+.stage { height: 80vh; flex: 0 0 80vh; display: flex; }
+
+/* left 10% : cm ruler */
+.ruler { width: 10%; flex: 0 0 10%; position: relative; border-right: 1px solid #eee; }
+.ruler .tick { position: absolute; right: 0; width: 100%; border-top: 1px solid #e3e3e3; }
+.ruler .tick span { position: absolute; right: 4px; top: -8px; font-size: 11px; color: #888; }
+
+/* people area : full remaining width */
+.people { flex: 1; position: relative; overflow: hidden; }
+.people-inner { position: absolute; inset: 0; transition: transform .45s ease; }
+
+.sprite {
+  position: absolute; bottom: 0;
+  opacity: 0; pointer-events: none;
+  transition: opacity 1s ease, transform .35s ease, height .35s ease, left .35s ease;
+  cursor: pointer;
+}
+.sprite.shown { opacity: 1; pointer-events: auto; }
+.sprite.leaving { transition: opacity .3s ease; opacity: 0; }   /* quick fade-out before removal */
+.sprite img { display: block; height: 100%; width: auto; }
+
+/* controls : overlay, top-right, both buttons together */
+.controls {
+  position: absolute; top: 8px; right: 8px; z-index: 5;
+  display: flex; gap: 6px;
+}
+.controls .nav {
+  width: 42px; height: 42px; font-size: 20px;
+  border: 1px solid #ccc; border-radius: 50%; background: rgba(255,255,255,.9); cursor: pointer;
+}
+.controls .nav:active { background: #f2f2f2; }
+.controls .nav:disabled { opacity: .28; cursor: default; }   /* stays in place, just greyed */
+
+/* bottom 10% : ground */
+.ground { height: 10vh; flex: 0 0 10vh; background: #000; }
+
+/* KaTeX detail panel */
+.panel {
+  position: absolute; top: 0; max-height: 100%; overflow: auto;
+  background: rgba(255,255,255,.97); border: 1px solid #e3e3e3; border-radius: 8px;
+  padding: 10px 12px; box-shadow: 0 6px 24px rgba(0,0,0,.08);
+  pointer-events: none; user-select: none;
+  opacity: 0; transform: translateY(6px) scale(.98);
+  transition: opacity .28s ease, transform .28s ease;
+}
+.panel.in { opacity: 1; transform: none; }
+/* pinned: stays open, text is selectable/copyable (KaTeX copy-tex gives LaTeX) */
+.panel.pinned { pointer-events: auto; user-select: text; border-color: #bbb; box-shadow: 0 8px 30px rgba(0,0,0,.14); }
+.panel .row { padding: 2px 0; white-space: nowrap; }
+.panel .sep { height: 1px; background: #eee; margin: 7px 0; }
+.panel .ok   { color: #1a7f37; }
+.panel .warn { color: #b45309; }
+.panel .bad  { color: #c01c28; }

@@ -1,0 +1,129 @@
+{
+    "sprites": [
+        {
+            "id": "fd79232d58235429",
+            "file": "sprites\/fd79232d58235429.png",
+            "height": 10,
+            "name": "Jane Doe"
+        },
+        {
+            "id": "c075cf4a3cdcb122",
+            "file": "sprites\/c075cf4a3cdcb122.png",
+            "height": 40,
+            "name": "Mo\u00fe\u2011maiden",
+            "y": 0.0805780222150329
+        },
+        {
+            "id": "56b08320aab621b6",
+            "file": "sprites\/56b08320aab621b6.png",
+            "height": 94,
+            "name": "Baio",
+            "y": 0.05647330857994086
+        },
+        {
+            "id": "764ce31654a88342",
+            "file": "sprites\/764ce31654a88342.png",
+            "height": 112,
+            "name": "Bunnie\u2011maiden",
+            "y": 0.100584743313249
+        },
+        {
+            "id": "f09a5cff4e94f39a",
+            "file": "sprites\/f09a5cff4e94f39a.png",
+            "height": 142,
+            "name": "Yanfei",
+            "y": 0.06927985414767548
+        },
+        {
+            "id": "6fd56431d1fcc5c5",
+            "file": "sprites\/6fd56431d1fcc5c5.png",
+            "height": 166,
+            "name": "Frieren",
+            "y": 0.01663072236921093
+        },
+        {
+            "id": "4d3bebd5ff0834b9",
+            "file": "sprites\/4d3bebd5ff0834b9.png",
+            "height": 178,
+            "name": "Grown\u2011person",
+            "y": 0.010938924339106655
+        },
+        {
+            "id": "47c844a7b472448e",
+            "file": "sprites\/47c844a7b472448e.png",
+            "height": 422,
+            "name": "Gun\u2011maiden",
+            "y": 0.03798794865077286
+        },
+        {
+            "id": "f65a2d7485def817",
+            "file": "sprites\/f65a2d7485def817.png",
+            "height": 172,
+            "name": "Fairie\u2011maiden",
+            "y": 0.03228316695199769
+        },
+        {
+            "id": "d4a0907a65668492",
+            "file": "sprites\/d4a0907a65668492.png",
+            "height": 224,
+            "name": "Jane Doe (\u00a0Adult\u00a0)",
+            "y": 0.006008489057935064
+        },
+        {
+            "id": "d01056ba5fb0c9d5",
+            "file": "sprites\/d01056ba5fb0c9d5.png",
+            "height": 164,
+            "name": "Furina",
+            "y": 0.06216510661004514
+        },
+        {
+            "id": "bdc3cb7074f5ee58",
+            "file": "sprites\/bdc3cb7074f5ee58.png",
+            "height": 386,
+            "name": "Viking\u2011maiden",
+            "y": 0.05078151054983658
+        },
+        {
+            "id": "7a6943c9edb8a9c6",
+            "file": "sprites\/7a6943c9edb8a9c6.png",
+            "height": 327,
+            "name": "Fox\u2011who\u2011Demi\u2011god\u2011is\u2011maiden",
+            "y": 0.09218027320641067
+        },
+        {
+            "id": "2ddc942becb92e2d",
+            "file": "sprites\/2ddc942becb92e2d.png",
+            "height": 158,
+            "name": "Fischl",
+            "y": 0.04651266202725838
+        },
+        {
+            "id": "9e38f00bc183008b",
+            "file": "sprites\/9e38f00bc183008b.png",
+            "height": 3.8,
+            "name": "\u2018onduran\u2011White\u2011bat\u2011maiden",
+            "y": 0.12265352005850963
+        },
+        {
+            "id": "45fd4f32c058f3e1",
+            "file": "sprites\/45fd4f32c058f3e1.png",
+            "height": 463,
+            "name": "Turkic\u2011Demi\u2011god maiden",
+            "y": 0.11623718789603575
+        },
+        {
+            "id": "a8a22fdf79a25e72",
+            "file": "sprites\/a8a22fdf79a25e72.png",
+            "height": 274,
+            "name": "Shy Black\u2011\u2018airen maiden",
+            "y": 0.03379617500654965
+        },
+        {
+            "id": "80c4492c6d0e1bcf",
+            "file": "sprites\/80c4492c6d0e1bcf.png",
+            "height": 532,
+            "name": "Godde\u00df\u2011maiden wi\u00f0 \u2018er cat",
+            "y": 0.008093025324054516
+        }
+    ]
+}

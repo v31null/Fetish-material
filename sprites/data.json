@@ -123,7 +123,13 @@
             "file": "sprites\/80c4492c6d0e1bcf.png",
             "height": 532,
             "name": "Godde\u00df\u2011maiden wi\u00f0 \u2018er cat",
-            "y": 0.008093025324054516
+            "y": 0.014709774170783346
+        },
+        {
+            "id": "f75cdbb50bfacac7",
+            "file": "sprites\/f75cdbb50bfacac7.png",
+            "height": 166.5,
+            "name": "Godde\u00df\u2011maiden\u2019s babie"
         }
     ]
 }
